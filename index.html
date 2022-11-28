@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+  
+<body>
+   <img class="logo" src="images/logo.svg" alt="logo"/> 
+   <div class="container">
+    <div class="grid-container">
+      <div class="grid-1">
+        <div class="grid2-container">
+         <form>
+            <div class="grid2-1"><label>Bill</label></div>
+            <div><input id="bill" class="biginput grid2-2" type="text" id="bill" placeholder="0"></input></div>
+         </form>
+          <div class="grid2-3"><p>Select tip %</p></div>
+          <div class="grid2-4">
+            <div class="flex-container">
+              <button id="percent_5" class="green smallbutton bigfont white" value="5">5%</button>
+              <button id="percent_10" class="green smallbutton bigfont white" value="10">10%</button>
+              <button id="percent_15" class="cyan smallbutton bigfont white" value="15">15%</button>
+              <button id="percent_20" class="green smallbutton bigfont white" value="25">25%</button>
+              <button id="percent_25" class="green smallbutton bigfont white" value="50">50%</button>
+              <input id="custom_tip" class="smallinput" type="text" placeholder="Custom"></input>
+            </div>
+          </div>
+          <form>
+            <div class="grid2-5"><label>Number of people</label></div>
+            <div><input id="numOfPeople" class="biginput grid2-6" type="text" placeholder="0"></input></div>
+          </form>
+        </div>
+      </div>
+      <div class="grid-2">
+         <div class="grid3-cointainer">
+           
+           <div class="row1 bigfont white"><p>Tip Amount</p></div>
+           <div class="row2 light">/ person</div>
+           <div class="row3 cyan1 biggerfont" id="tip_person"></div>
+         
+           <div class="row4 bigfont white">Total</div>
+           <div class="row5 light">/ person</div>
+           <div class="row6 cyan1 biggerfont" id="tip_total"></div>
+        
+           <div class="row7"><button id="reset" class="fullwidht cyan bigfont darkcyan">RESET</button></div>
+             
+         </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
